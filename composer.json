@@ -4,8 +4,14 @@
     "type": "project",
     "description": "The \"Symfony Standard Edition\" distribution",
     "autoload": {
-        "psr-4": { "": "src/" },
-        "files": [ "app/AppKernel.php" ]
+        "psr-4": {
+            "": "src/",
+            "Symfony\\Bridge\\PhpUnit\\": "vendor/symfony/symfony/src/Symfony/Bridge/PhpUnit/"
+        },
+        "files": [
+            "app/AppKernel.php",
+            "vendor/symfony/symfony/src/Symfony/Bridge/PhpUnit/bootstrap.php"
+        ]
     },
     "require": {
         "php": ">=5.3.9",
